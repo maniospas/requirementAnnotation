@@ -1,0 +1,551 @@
+T1	Actor 4 8	user
+T2	Action 25 31	create
+T3	Object 35 42	account
+T4	Property 50 58	username
+T5	Property 63 71	password
+R1	IsActorOf Arg1:T1 Arg2:T2	
+R2	HasProperty Arg1:T3 Arg2:T4	
+R3	HasProperty Arg1:T3 Arg2:T5	
+R4	ActsOn Arg1:T2 Arg2:T3	
+T6	Actor 76 80	user
+T7	Action 97 103	log-in
+T8	Object 110 117	account
+T9	Property 129 137	username
+T10	Property 142 150	password
+R5	IsActorOf Arg1:T6 Arg2:T7	
+R6	HasProperty Arg1:T8 Arg2:T9	
+R7	HasProperty Arg1:T8 Arg2:T10	
+R8	ActsOn Arg1:T7 Arg2:T8	
+T11	Actor 155 159	user
+T12	Action 176 183	log-out
+R9	IsActorOf Arg1:T11 Arg2:T12	
+T13	Property 188 197	logged-in
+T14	Actor 198 202	user
+T15	Action 219 225	change
+T16	Object 232 239	account
+T17	Property 240 248	password
+R10	HasProperty Arg1:T14 Arg2:T13	
+R11	IsActorOf Arg1:T14 Arg2:T15	
+R12	HasProperty Arg1:T16 Arg2:T17	
+R13	ActsOn Arg1:T15 Arg2:T17	
+T18	Property 253 262	logged-in
+T19	Actor 263 267	user
+T20	Action 284 287	set
+T21	Object 291 298	account
+T22	Property 299 304	email
+R14	HasProperty Arg1:T19 Arg2:T18	
+R15	IsActorOf Arg1:T19 Arg2:T20	
+R16	HasProperty Arg1:T21 Arg2:T22	
+R17	ActsOn Arg1:T20 Arg2:T22	
+T23	Property 309 318	logged-in
+T24	Actor 319 323	user
+T25	Action 340 346	create
+T26	Object 349 356	project
+R18	HasProperty Arg1:T24 Arg2:T23	
+R19	IsActorOf Arg1:T24 Arg2:T25	
+R20	ActsOn Arg1:T25 Arg2:T26	
+T27	Property 361 370	logged-in
+T28	Actor 371 375	user
+T29	Action 389 396	created
+T30	Object 397 404	project
+R21	HasProperty Arg1:T28 Arg2:T27	
+R22	IsActorOf Arg1:T28 Arg2:T29	
+R23	ActsOn Arg1:T29 Arg2:T30	
+T31	Property 409 418	logged-in
+T32	Actor 419 423	user
+T33	Action 440 446	delete
+T34	Object 453 460	account
+T35	Object 479 486	project
+T36	Property 487 492	owner
+R24	HasProperty Arg1:T32 Arg2:T31	
+R25	IsActorOf Arg1:T32 Arg2:T33	
+R26	HasProperty Arg1:T35 Arg2:T36	
+R27	ActsOn Arg1:T33 Arg2:T34	
+R28	ActsOn Arg1:T33 Arg2:T36	
+T37	Actor 497 502	owner
+T38	Action 519 522	add
+T39	Object 529 533	user
+T40	Object 538 545	project
+T41	Property 546 551	owner
+R29	IsActorOf Arg1:T37 Arg2:T38	
+R30	HasProperty Arg1:T40 Arg2:T41	
+R31	ActsOn Arg1:T38 Arg2:T39	
+R32	ActsOn Arg1:T38 Arg2:T41	
+T42	Actor 557 562	owner
+T43	Action 579 585	remove
+T44	Object 602 609	project
+T45	Property 610 615	owner
+T46	Property 623 628	least
+T47	Object 643 648	exist
+R33	IsActorOf Arg1:T42 Arg2:T43	
+R34	HasProperty Arg1:T44 Arg2:T45	
+R35	HasProperty Arg1:T46 Arg2:T47	
+R36	ActsOn Arg1:T43 Arg2:T45	
+R37	ActsOn Arg1:T43 Arg2:T47	
+T48	Actor 654 659	owner
+T49	Action 676 682	delete
+T50	Object 687 694	project
+R38	IsActorOf Arg1:T48 Arg2:T49	
+R39	ActsOn Arg1:T49 Arg2:T50	
+T51	Actor 699 704	owner
+T52	Action 721 724	set
+T53	Object 729 736	project
+T54	Property 737 741	name
+R40	IsActorOf Arg1:T51 Arg2:T52	
+R41	HasProperty Arg1:T53 Arg2:T54	
+R42	ActsOn Arg1:T52 Arg2:T54	
+T55	Actor 746 751	owner
+T56	Action 768 771	set
+T57	Object 776 783	project
+T58	Property 784 795	description
+R43	IsActorOf Arg1:T55 Arg2:T56	
+R44	HasProperty Arg1:T57 Arg2:T58	
+R45	ActsOn Arg1:T56 Arg2:T58	
+T59	Actor 800 805	owner
+T60	Action 822 825	set
+T61	Object 838 845	project
+T62	Property 849 855	public
+R46	IsActorOf Arg1:T59 Arg2:T60	
+R47	HasProperty Arg1:T61 Arg2:T62	
+R48	ActsOn Arg1:T60 Arg2:T61	
+T63	Actor 860 865	owner
+T64	Action 882 885	set
+T65	Object 900 907	project
+T66	Property 911 920	anonymous
+R49	IsActorOf Arg1:T63 Arg2:T64	
+R50	HasProperty Arg1:T65 Arg2:T66	
+R51	ActsOn Arg1:T64 Arg2:T65	
+T67	Actor 925 930	owner
+T68	Action 947 953	create
+T69	Object 957 963	entity
+T70	Object 971 978	project
+R52	IsActorOf Arg1:T67 Arg2:T68	
+R53	ActsOn Arg1:T68 Arg2:T69	
+R54	ActsOn Arg1:T68 Arg2:T70	
+T71	Actor 983 988	owner
+T72	Action 1005 1011	remove
+T73	Object 1015 1021	entity
+T74	Object 1031 1038	project
+R55	IsActorOf Arg1:T71 Arg2:T72	
+R56	ActsOn Arg1:T72 Arg2:T73	
+R57	ActsOn Arg1:T72 Arg2:T74	
+T75	Actor 1043 1048	owner
+T76	Action 1065 1068	set
+T77	Object 1084 1091	project
+T78	Property 1092 1098	entity
+R58	IsActorOf Arg1:T75 Arg2:T76	
+R59	HasProperty Arg1:T77 Arg2:T78	
+R60	ActsOn Arg1:T76 Arg2:T78	
+T79	Actor 1103 1108	owner
+T80	Action 1125 1128	set
+T81	Object 1151 1158	project
+T82	Property 1159 1165	entity
+R61	IsActorOf Arg1:T79 Arg2:T80	
+R62	HasProperty Arg1:T81 Arg2:T82	
+R63	ActsOn Arg1:T80 Arg2:T82	
+T83	Actor 1170 1175	owner
+T84	Action 1192 1195	add
+T85	Object 1198 1204	source
+T86	Object 1210 1217	project
+T87	Property 1218 1224	entity
+R64	IsActorOf Arg1:T83 Arg2:T84	
+R65	HasProperty Arg1:T86 Arg2:T87	
+R66	ActsOn Arg1:T84 Arg2:T85	
+R67	ActsOn Arg1:T84 Arg2:T87	
+T88	Actor 1229 1234	owner
+T89	Action 1251 1257	remove
+T90	Object 1260 1266	source
+T91	Object 1274 1281	project
+T92	Property 1282 1288	entity
+R68	IsActorOf Arg1:T88 Arg2:T89	
+R69	HasProperty Arg1:T91 Arg2:T92	
+R70	ActsOn Arg1:T89 Arg2:T90	
+R71	ActsOn Arg1:T89 Arg2:T92	
+T93	Actor 1293 1298	owner
+T94	Action 1315 1321	create
+T95	Object 1324 1332	relation
+T96	Property 1341 1344	two
+T97	Object 1345 1352	project
+T98	Property 1353 1361	entities
+R72	IsActorOf Arg1:T93 Arg2:T94	
+R73	HasProperty Arg1:T95 Arg2:T96	
+R74	HasProperty Arg1:T97 Arg2:T98	
+R75	ActsOn Arg1:T94 Arg2:T95	
+R76	ActsOn Arg1:T94 Arg2:T98	
+T99	Actor 1366 1371	owner
+T100	Action 1388 1394	remove
+T101	Object 1397 1404	project
+T102	Property 1405 1413	relation
+R77	IsActorOf Arg1:T99 Arg2:T100	
+R78	HasProperty Arg1:T101 Arg2:T102	
+R79	ActsOn Arg1:T100 Arg2:T102	
+T103	Actor 1418 1423	owner
+T104	Action 1440 1443	set
+T105	Object 1457 1464	project
+T106	Property 1465 1473	relation
+R80	IsActorOf Arg1:T103 Arg2:T104	
+R81	HasProperty Arg1:T105 Arg2:T106	
+R82	ActsOn Arg1:T104 Arg2:T106	
+T107	Actor 1478 1483	owner
+T108	Action 1500 1503	set
+T109	Object 1524 1531	project
+T110	Property 1532 1540	relation
+R83	IsActorOf Arg1:T107 Arg2:T108	
+R84	HasProperty Arg1:T109 Arg2:T110	
+R85	ActsOn Arg1:T108 Arg2:T110	
+T111	Actor 1545 1550	owner
+T112	Action 1567 1570	add
+T113	Object 1573 1579	source
+T114	Object 1585 1592	project
+T115	Property 1593 1601	relation
+R86	IsActorOf Arg1:T111 Arg2:T112	
+R87	HasProperty Arg1:T114 Arg2:T115	
+R88	ActsOn Arg1:T112 Arg2:T113	
+R89	ActsOn Arg1:T112 Arg2:T115	
+T116	Actor 1606 1611	owner
+T117	Action 1628 1634	remove
+T118	Object 1637 1643	source
+T119	Object 1651 1658	project
+T120	Property 1659 1667	relation
+R90	IsActorOf Arg1:T116 Arg2:T117	
+R91	HasProperty Arg1:T119 Arg2:T120	
+R92	ActsOn Arg1:T117 Arg2:T118	
+R93	ActsOn Arg1:T117 Arg2:T120	
+T121	Actor 1672 1677	owner
+T122	Action 1694 1700	create
+T123	Object 1701 1709	entities
+T124	Object 1717 1724	project
+T125	Property 1732 1742	repository
+R94	IsActorOf Arg1:T121 Arg2:T122	
+R95	HasProperty Arg1:T124 Arg2:T125	
+R96	ActsOn Arg1:T122 Arg2:T123	
+R97	ActsOn Arg1:T122 Arg2:T124	
+T126	Actor 1751 1756	owner
+T127	Action 1773 1779	create
+T128	Object 1780 1788	relation
+T129	Object 1797 1804	project
+T130	Property 1812 1822	repository
+R98	IsActorOf Arg1:T126 Arg2:T127	
+R99	HasProperty Arg1:T129 Arg2:T130	
+R100	ActsOn Arg1:T127 Arg2:T128	
+R101	ActsOn Arg1:T127 Arg2:T129	
+T131	Actor 1831 1836	owner
+T132	Action 1853 1859	create
+T133	Object 1860 1867	project
+T134	Property 1868 1876	entities
+R102	IsActorOf Arg1:T131 Arg2:T132	
+R103	HasProperty Arg1:T133 Arg2:T134	
+R104	ActsOn Arg1:T132 Arg2:T134	
+T135	Actor 1899 1904	owner
+T136	Action 1921 1927	create
+T137	Object 1928 1936	relation
+T138	Object 1945 1952	project
+T139	Property 1960 1970	systempath
+R105	IsActorOf Arg1:T135 Arg2:T136	
+R106	HasProperty Arg1:T138 Arg2:T139	
+R107	ActsOn Arg1:T136 Arg2:T137	
+R108	ActsOn Arg1:T136 Arg2:T138	
+T140	Actor 1975 1980	owner
+T141	Action 1997 2003	search
+T142	Property 2014 2021	similar
+T143	Object 2022 2029	project
+R109	IsActorOf Arg1:T140 Arg2:T141	
+R110	HasProperty Arg1:T142 Arg2:T143	
+R111	ActsOn Arg1:T141 Arg2:T143	
+T144	Actor 2035 2039	user
+T145	Action 2056 2059	see
+T146	Property 2064 2068	name
+T147	Property 2070 2081	description
+T148	Property 2086 2093	sources
+T149	Property 2101 2106	found
+T150	Object 2107 2114	project
+T151	Object 2117 2125	entities
+T152	Object 2129 2137	relation
+R112	IsActorOf Arg1:T144 Arg2:T145	
+R113	HasProperty Arg1:T146 Arg2:T149	
+R114	HasProperty Arg1:T150 Arg2:T146	
+R115	HasProperty Arg1:T150 Arg2:T147	
+R116	HasProperty Arg1:T150 Arg2:T148	
+R117	HasProperty Arg1:T151 Arg2:T146	
+R118	HasProperty Arg1:T151 Arg2:T147	
+R119	HasProperty Arg1:T151 Arg2:T148	
+R120	HasProperty Arg1:T152 Arg2:T146	
+R121	HasProperty Arg1:T152 Arg2:T147	
+R122	HasProperty Arg1:T152 Arg2:T148	
+R123	ActsOn Arg1:T145 Arg2:T146	
+R124	ActsOn Arg1:T145 Arg2:T150	
+R125	ActsOn Arg1:T145 Arg2:T146	
+R126	ActsOn Arg1:T145 Arg2:T147	
+R127	ActsOn Arg1:T145 Arg2:T148	
+T153	Actor 2143 2147	user
+T154	Action 2164 2167	see
+T155	Property 2177 2186	usernames
+T156	Property 2191 2196	email
+T157	Property 2226 2231	found
+T158	Object 2232 2239	project
+R128	IsActorOf Arg1:T153 Arg2:T154	
+R129	HasProperty Arg1:T158 Arg2:T155	
+R130	HasProperty Arg1:T158 Arg2:T156	
+R131	HasProperty Arg1:T157 Arg2:T158	
+R132	ActsOn Arg1:T154 Arg2:T155	
+R133	ActsOn Arg1:T154 Arg2:T156	
+T159	Actor 2245 2249	user
+T160	Action 2266 2271	visit
+T161	Property 2276 2283	profile
+T162	Property 2287 2291	seen
+T163	Object 2292 2296	user
+R134	IsActorOf Arg1:T159 Arg2:T160	
+R135	HasProperty Arg1:T163 Arg2:T161	
+R136	HasProperty Arg1:T162 Arg2:T163	
+R137	ActsOn Arg1:T160 Arg2:T161	
+T164	Property 2302 2311	logged-in
+T165	Actor 2312 2316	user
+T166	Action 2333 2338	visit
+T167	Object 2345 2352	profile
+R138	HasProperty Arg1:T165 Arg2:T164	
+R139	IsActorOf Arg1:T165 Arg2:T166	
+R140	ActsOn Arg1:T166 Arg2:T167	
+T168	Actor 2357 2361	user
+T169	Action 2378 2381	see
+T170	Property 2384 2388	list
+T171	Property 2400 2409	anonymous
+T172	Object 2410 2417	project
+T173	Object 2443 2448	owner
+R141	IsActorOf Arg1:T168 Arg2:T169	
+R142	HasProperty Arg1:T173 Arg2:T170	
+R143	HasProperty Arg1:T171 Arg2:T172	
+R144	ActsOn Arg1:T169 Arg2:T172	
+R145	ActsOn Arg1:T169 Arg2:T170	
+T174	Property 2453 2462	logged-in
+T175	Actor 2463 2467	user
+T176	Action 2484 2487	see
+T177	Property 2490 2494	list
+T178	Object 2512 2519	project
+T179	Object 2530 2537	profile
+R146	HasProperty Arg1:T175 Arg2:T174	
+R147	IsActorOf Arg1:T175 Arg2:T176	
+R148	HasProperty Arg1:T179 Arg2:T177	
+R149	ActsOn Arg1:T176 Arg2:T178	
+R150	ActsOn Arg1:T176 Arg2:T177	
+T180	Actor 2542 2546	user
+T181	Action 2563 2568	visit
+T182	Object 2573 2580	project
+T183	Property 2581 2585	page
+T184	Object 2599 2606	project
+R151	IsActorOf Arg1:T180 Arg2:T181	
+R152	HasProperty Arg1:T184 Arg2:T183	
+R153	ActsOn Arg1:T181 Arg2:T182	
+R154	ActsOn Arg1:T181 Arg2:T183	
+T185	Actor 2612 2616	user
+T186	Action 2633 2639	search
+T187	Object 2649 2656	account
+T188	Object 2661 2669	username
+T189	Object 2673 2678	email
+R155	IsActorOf Arg1:T185 Arg2:T186	
+R156	ActsOn Arg1:T186 Arg2:T187	
+R157	ActsOn Arg1:T186 Arg2:T188	
+R158	ActsOn Arg1:T186 Arg2:T189	
+T190	Actor 2683 2687	user
+T191	Action 2704 2709	visit
+T192	Property 2714 2721	profile
+T193	Property 2725 2730	found
+T194	Object 2731 2735	user
+R159	IsActorOf Arg1:T190 Arg2:T191	
+R160	HasProperty Arg1:T194 Arg2:T192	
+R161	HasProperty Arg1:T193 Arg2:T194	
+R162	ActsOn Arg1:T191 Arg2:T192	
+T195	Actor 2741 2745	user
+T196	Action 2762 2768	search
+T197	Object 2773 2780	project
+T198	Object 2794 2800	entity
+T199	Object 2804 2812	relation
+T200	Object 2813 2817	name
+T201	Object 2821 2832	description
+T202	Property 2833 2840	keyword
+R163	IsActorOf Arg1:T195 Arg2:T196	
+R164	HasProperty Arg1:T200 Arg2:T202	
+R165	HasProperty Arg1:T201 Arg2:T202	
+R166	ActsOn Arg1:T196 Arg2:T197	
+R167	ActsOn Arg1:T196 Arg2:T198	
+R168	ActsOn Arg1:T196 Arg2:T199	
+R169	ActsOn Arg1:T196 Arg2:T202	
+T203	Actor 2846 2850	user
+T204	Action 2867 2873	search
+T205	Object 2878 2885	project
+T206	Object 2899 2905	entity
+T207	Object 2909 2917	relation
+T208	Property 2918 2925	sources
+R170	IsActorOf Arg1:T203 Arg2:T204	
+R171	HasProperty Arg1:T206 Arg2:T208	
+R172	HasProperty Arg1:T207 Arg2:T208	
+R173	ActsOn Arg1:T204 Arg2:T205	
+R174	ActsOn Arg1:T204 Arg2:T208	
+T209	Actor 2930 2934	user
+T210	Action 2951 2954	see
+T211	Property 2957 2961	list
+T212	Property 2971 2977	public
+T213	Object 2978 2985	project
+R175	IsActorOf Arg1:T209 Arg2:T210	
+R176	HasProperty Arg1:T213 Arg2:T211	
+R177	HasProperty Arg1:T212 Arg2:T213	
+R178	ActsOn Arg1:T210 Arg2:T211	
+T214	Actor 2991 2995	user
+T215	Action 3012 3015	see
+T216	Property 3018 3022	list
+T217	Property 3036 3041	found
+T218	Object 3042 3049	project
+R179	IsActorOf Arg1:T214 Arg2:T215	
+R180	HasProperty Arg1:T218 Arg2:T216	
+R181	HasProperty Arg1:T217 Arg2:T218	
+R182	ActsOn Arg1:T215 Arg2:T216	
+T219	Actor 3055 3059	user
+T220	Action 3076 3081	visit
+T221	Object 3086 3093	project
+T222	Property 3094 3098	page
+T223	Property 3102 3107	found
+T224	Property 3108 3114	public
+T225	Object 3115 3122	project
+R183	IsActorOf Arg1:T219 Arg2:T220	
+R184	HasProperty Arg1:T221 Arg2:T223	
+R185	HasProperty Arg1:T225 Arg2:T222	
+R186	HasProperty Arg1:T224 Arg2:T225	
+R187	ActsOn Arg1:T220 Arg2:T221	
+R188	ActsOn Arg1:T220 Arg2:T222	
+T226	Actor 3128 3132	user
+T227	Action 3149 3152	see
+T228	Object 3157 3164	project
+T229	Object 3165 3173	entities
+T230	Object 3178 3186	relation
+T231	Property 3203 3207	page
+R189	IsActorOf Arg1:T226 Arg2:T227	
+R190	HasProperty Arg1:T229 Arg2:T231	
+R191	HasProperty Arg1:T230 Arg2:T231	
+R192	ActsOn Arg1:T227 Arg2:T228	
+R193	ActsOn Arg1:T227 Arg2:T229	
+R194	ActsOn Arg1:T227 Arg2:T230	
+T232	Actor 3212 3216	user
+T233	Action 3233 3236	see
+T234	Object 3241 3248	project
+T235	Object 3249 3253	name
+T236	Object 3255 3266	description
+T237	Object 3271 3278	sources
+T238	Property 3294 3298	page
+R195	IsActorOf Arg1:T232 Arg2:T233	
+R196	HasProperty Arg1:T234 Arg2:T235	
+R197	HasProperty Arg1:T235 Arg2:T238	
+R198	HasProperty Arg1:T236 Arg2:T238	
+R199	HasProperty Arg1:T237 Arg2:T238	
+R200	ActsOn Arg1:T233 Arg2:T235	
+R201	ActsOn Arg1:T233 Arg2:T235	
+R202	ActsOn Arg1:T233 Arg2:T236	
+R203	ActsOn Arg1:T233 Arg2:T237	
+T239	Actor 3303 3307	user
+T240	Action 3324 3327	see
+T241	Object 3332 3337	owner
+T242	Object 3346 3353	project
+T243	Property 3354 3358	page
+T244	Object 3366 3375	anonymous
+T245	Object 3389 3396	project
+R204	IsActorOf Arg1:T239 Arg2:T240	
+R205	HasProperty Arg1:T244 Arg2:T243	
+R206	HasProperty Arg1:T245 Arg2:T243	
+R207	ActsOn Arg1:T240 Arg2:T241	
+R208	ActsOn Arg1:T240 Arg2:T242	
+R209	ActsOn Arg1:T240 Arg2:T243	
+T246	Actor 3402 3406	user
+T247	Action 3423 3429	search
+T248	Object 3434 3442	entities
+T249	Object 3446 3454	relation
+T250	Object 3459 3463	name
+T251	Object 3467 3478	description
+T252	Property 3479 3486	keyword
+R210	IsActorOf Arg1:T246 Arg2:T247	
+R211	HasProperty Arg1:T250 Arg2:T252	
+R212	HasProperty Arg1:T251 Arg2:T252	
+R213	ActsOn Arg1:T247 Arg2:T248	
+R214	ActsOn Arg1:T247 Arg2:T249	
+R215	ActsOn Arg1:T247 Arg2:T252	
+T253	Actor 3492 3496	user
+T254	Action 3513 3519	search
+T255	Object 3524 3532	entities
+T256	Object 3536 3544	relation
+T257	Property 3549 3556	sources
+R216	IsActorOf Arg1:T253 Arg2:T254	
+R217	HasProperty Arg1:T255 Arg2:T257	
+R218	HasProperty Arg1:T256 Arg2:T257	
+R219	ActsOn Arg1:T254 Arg2:T255	
+R220	ActsOn Arg1:T254 Arg2:T256	
+T258	Actor 3561 3565	user
+T259	Action 3582 3585	see
+T260	Property 3588 3592	list
+T261	Property 3627 3633	public
+T262	Object 3634 3641	project
+R221	IsActorOf Arg1:T258 Arg2:T259	
+R222	HasProperty Arg1:T262 Arg2:T260	
+R223	HasProperty Arg1:T261 Arg2:T262	
+R224	ActsOn Arg1:T259 Arg2:T260	
+T263	Property 3647 3656	logged-in
+T264	Actor 3657 3661	user
+T265	Action 3678 3681	see
+T266	Property 3684 3688	list
+T267	Property 3692 3697	found
+T268	Object 3723 3730	project
+T269	Object 3744 3749	owner
+R225	HasProperty Arg1:T264 Arg2:T263	
+R226	IsActorOf Arg1:T264 Arg2:T265	
+R227	HasProperty Arg1:T269 Arg2:T266	
+R228	HasProperty Arg1:T267 Arg2:T268	
+R229	ActsOn Arg1:T265 Arg2:T268	
+R230	ActsOn Arg1:T265 Arg2:T266	
+T270	Actor 3754 3758	user
+T271	Action 3775 3780	visit
+T272	Object 3785 3792	project
+T273	Property 3793 3797	page
+T274	Property 3801 3805	seen
+T275	Object 3806 3814	entities
+T276	Object 3818 3826	relation
+R231	IsActorOf Arg1:T270 Arg2:T271	
+R232	HasProperty Arg1:T272 Arg2:T274	
+R233	HasProperty Arg1:T275 Arg2:T273	
+R234	HasProperty Arg1:T276 Arg2:T273	
+R235	ActsOn Arg1:T271 Arg2:T272	
+R236	ActsOn Arg1:T271 Arg2:T273	
+T277	Actor 3832 3845	administrator
+T278	Action 3862 3868	delete
+T279	Object 3871 3878	project
+R237	IsActorOf Arg1:T277 Arg2:T278	
+R238	ActsOn Arg1:T278 Arg2:T279	
+T280	Actor 3883 3896	administrator
+T281	Action 3913 3919	delete
+T282	Object 3923 3930	account
+T283	Object 3949 3956	project
+T284	Property 3957 3962	owner
+R239	IsActorOf Arg1:T280 Arg2:T281	
+R240	HasProperty Arg1:T283 Arg2:T284	
+R241	ActsOn Arg1:T281 Arg2:T282	
+R242	ActsOn Arg1:T281 Arg2:T284	
+T285	Actor 3967 3980	administrator
+T286	Action 3997 4003	remove
+T287	Object 4006 4013	project
+T288	Property 4014 4019	owner
+T289	Property 4026 4031	least
+T290	Object 4046 4051	exist
+R243	IsActorOf Arg1:T285 Arg2:T286	
+R244	HasProperty Arg1:T287 Arg2:T288	
+R245	HasProperty Arg1:T289 Arg2:T290	
+R246	ActsOn Arg1:T286 Arg2:T288	
+R247	ActsOn Arg1:T286 Arg2:T290	
+T291	Actor 4057 4070	administrator
+T292	Action 4087 4090	set
+T293	Object 4093 4100	project
+T294	Property 4108 4114	public
+R248	IsActorOf Arg1:T291 Arg2:T292	
+R249	HasProperty Arg1:T293 Arg2:T294	
+R250	ActsOn Arg1:T292 Arg2:T293	
+T295	Actor 4119 4132	administrator
+T296	Action 4149 4152	set
+T297	Object 4155 4162	project
+T298	Property 4166 4175	anonymous
+R251	IsActorOf Arg1:T295 Arg2:T296	
+R252	HasProperty Arg1:T297 Arg2:T298	
+R253	ActsOn Arg1:T296 Arg2:T297	

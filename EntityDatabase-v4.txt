@@ -1,0 +1,59 @@
+The user must be able to create an account with a username and password
+The user must be able to log-in their account with their username and password
+The user must be able to log-out
+The logged-in user must be able to change their account password
+The logged-in user must be able to set an account email
+The logged-in user must be able to create a project
+The logged-in user must own the created project
+The logged-in user must be able to delete their account if they are not a project owner
+The owner must be able to add other users as project owners
+The owner must be able to remove themselves from project owners if at least another owner exists
+The owner must be able to delete the project
+The owner must be able to set the project name
+The owner must be able to set the project description
+The owner must be able to set whether the project is public
+The owner must be able to set whether their project is anonymous
+The owner must be able to create an entity in the project
+The owner must be able to remove an entity from the project
+The owner must be able to set the name for a project entity
+The owner must be able to set the description for a project entity
+The owner must be able to add a source to a project entity
+The owner must be able to remove a source from a project entity
+The owner must be able to create a relation between two project entities
+The owner must be able to remove a project relation
+The owner must be able to set a name for a project relation
+The owner must be able to set a description for a project relation
+The owner must be able to add a source to a project relation
+The owner must be able to remove a source from a project relation
+The owner must be able to create entities in the project from a repository url
+The owner must be able to create relations in the project from a repository url
+The owner must be able to create project entities from a systempath
+The owner must be able to create relations in the project from a systempath
+The owner must be able to search for other similar projects
+The user must be able to see the name, description and sources of all found projects, entities or relations
+The user must be able to see the owner usernames and emails of non-anonymous found projects
+The user must be able to visit the profile of seen users
+The logged-in user must be able to visit their profile
+The user must be able to see a list of all non-anonymous projects in the profile of their owner
+The logged-in user must be able to see a list of all their own projects in their profile
+The user must be able to visit the project page of their own projects
+The user must be able to search for user accounts by username or email
+The user must be able to visit the profile of found users
+The user must be able to search for projects by project, entity or relation name or description keywords
+The user must be able to search for projects by project, entity or relation sources
+The user must be able to see a list of found public projects
+The user must be able to see a list of their own found projects
+The user must be able to visit the project page of found public projects
+The user must be able to see the project entities and relations in the project page
+The user must be able to see the project name, description and sources in the project page
+The user must be able to see the owners in the project page of non-anonymous or their own projects
+The user must be able to search for entities or relations by name or description keywords
+The user must be able to search for entities or relations by sources
+The user must be able to see a list of found entities or relations of public projects
+The logged-in user must be able to see a list of found entities or relations of projects they are an owner
+The user must be able to visit the project page of seen entities or relations
+The administrator must be able to delete a project
+The administrator must be able to delete an account if they are not a project owner
+The administrator must be able to remove a project owner if at least another owner exists
+The administrator must be able to set a project to non-public
+The administrator must be able to set a project to anonymous
